@@ -1,0 +1,11 @@
+@use "../styles/Vars" as *;
+
+li {
+  list-style-type: none;
+}
+
+svg {
+  color: $aquamarineDark;
+  font-size: 30px;
+  padding-left: 20px;
+}

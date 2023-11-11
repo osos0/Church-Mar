@@ -1,0 +1,61 @@
+@use "../styles/Vars" as *;
+
+.footerGenral {
+  margin-top: 20px;
+  .conOfFooter {
+    padding: 20px 0;
+    background-color: $aquamarineLight;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.3);
+    .fotPicCon1 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      text-align: center;
+      h5,
+      p {
+        color: $aquamarineDark;
+      }
+      .fotPicCon {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  .fotPicCon2 {
+    text-align: center;
+  }
+  .fotPicCon3 {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    text-align: center;
+    .fotMapCon {
+      padding: 2px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+
+      div {
+        text-align: end;
+      }
+    }
+  }
+
+  .titleFooterH2 {
+    width: 100%;
+    color: $aquamarineDark;
+  }
+
+  .ulcon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
