@@ -7,8 +7,6 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Ourchurch from "./pages/Ourchurch";
 import Footer from "./componants/Footer";
-import text from "./imgs/text2.jpg";
-// import Header from "./componants/Header";
 
 function App() {
   return (

@@ -61,10 +61,6 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 fotPicCon3">
-            {/* <h2 className="titleFooterH2">
-              بيانات
-              <hr />
-            </h2> */}
             <ul className="ulcon">
               <div className="lichild1">
                 <li>
