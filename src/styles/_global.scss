@@ -4,8 +4,32 @@ li {
   list-style-type: none;
 }
 
+* {
+  font-family: "Caveat", cursive !important;
+}
+
+h2 {
+  color: $aquamarineDark !important;
+  font-family: "Amiri", serif !important;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  // font-family: "Caveat", cursive !important;
+}
+
 svg {
   color: $aquamarineDark;
   font-size: 30px;
-  padding-left: 20px;
+}
+
+.ConOfTitle {
+  text-align: center;
+}
+
+.testClass {
+  height: 100vh;
+  border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
 }

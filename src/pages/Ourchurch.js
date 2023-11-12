@@ -22,16 +22,22 @@ const Ourchurch = () => {
       <div className="container ourchurch">
         <Header />
         <div className="row chuOthersSection">
-          <h2> الإيبارشية</h2>
-          <div>منطقة مدينة السلام والحرفيين، بالقاهرة</div>
-        </div>
-        <div className="row chuOthersSection">
-          <h2> العنوان/المكان</h2>
-          <div>شارع الـ15، الخمسين، النزهة الجديدة 2، جسر السويس.</div>
-        </div>
-        <div className="row chuOthersSection">
-          <h2> شفيع الكنيسة</h2>
-          <div>القديس مرقس الرسول والإنجيلي والشهيد البطريرك الأول</div>
+          <div className="col-lg-8 col-md-6 col-sm-12 detialsChild">
+            <h2> شفيع الكنيسة</h2>
+            <div>القديس مرقس الرسول والإنجيلي والشهيد البطريرك الأول</div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 detialsChild">
+            <h2> العنوان</h2>
+            <div>شارع الـ15، الخمسين، النزهة الجديدة 2، جسر السويس.</div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 detialsChild">
+            <h2> الإيبارشية</h2>
+            <div>منطقة مدينة السلام والحرفيين، بالقاهرة</div>
+          </div>
+          <div className="col-lg-8 col-md-6 col-sm-12 detialsChild">
+            <h2> الأسقف</h2>
+            <div>الأنبا مكسيموس</div>
+          </div>
         </div>
         <div className="row chuOthersSection">
           <h2> أعياد شفيع الكنيسة</h2>
@@ -39,11 +45,11 @@ const Ourchurch = () => {
             <div className="col-lg-5 col-md-6 col-sm-12 marmarPic">
               <img src={marMar} alt="marmarcose" />
             </div>
-            <div className="col-lg-7 col-md-6 col-sm-12 ">
+            <div className="col-lg-7 col-md-6 col-sm-12 marmarText">
               <div>
-                استشهاد مارمرقس الرسول أول باباوات الإسكندرية (30 برمودة)
+                أستشهاد مارمرقس الرسول أول باباوات الإسكندرية (30 برمودة)
               </div>
-              <div>استلام رفات ماري مرقس في روما (15 بؤونة) </div>
+              <div> أستلام رفات ماري مرقس في روما (15 بؤونة) </div>
               <div>عودة رفات القديس مارمرقص (17 بؤونة) </div>
               <div>
                 افتتاح الكاتدرائية المرقسية الجديدة بدير الأنبا رويس (18 بؤونة){" "}

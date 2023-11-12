@@ -121,6 +121,23 @@ const Header = () => {
             <div className="NavchuConText">
               <h2>كنيسة مارمرقس الرسول القبطية الأرثوذكسية </h2>
               <h5>النزهة الجديدة 2، جسر السويس، القاهرة، مصر</h5>
+              {/* <div className="conOfsvg">
+                <Link to="/" target="_blank">
+                  <FontAwesomeIcon icon={faSquareFacebook} />
+                </Link>
+                <Link to="http://m.me///" target="_blank">
+                  <FontAwesomeIcon icon={faFacebookMessenger} />
+                </Link>
+                <Link
+                // to="https://api.whatsapp.com/send?phone=201210008710"
+                // target="_blank"
+                >
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </Link>
+                <Link to="/" target="_blank">
+                  <FontAwesomeIcon icon={faYoutube} />
+                </Link>
+              </div> */}
             </div>
           </div>
         </div>

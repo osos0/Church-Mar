@@ -77,6 +77,49 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                  الأنشطة
+                </Link>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      مركز الكاروز الطبي{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      مكتب الرحلات{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      المكتبه{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      استراحة الدور الاول{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      أستراحه الدور الثاني عشر{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" href="#">
+                      الحضانه{" "}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   مدارس الأحد
                 </Link>
                 <ul className="dropdown-menu">
@@ -126,12 +169,12 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  القدسات
+                <Link className="nav-link" to="/kodas">
+                  القداسات
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/holybible">
                   الكتاب المقدس
                 </Link>
               </li>

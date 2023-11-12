@@ -7,6 +7,7 @@ import {
   faFacebookMessenger,
   faSquareFacebook,
   faWhatsapp,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faLocationPin, faPhone } from "@fortawesome/free-solid-svg-icons";
 
@@ -38,13 +39,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/holybible">
                   الكتاب المقدس
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="/">
-                  القدسات
+                <Link className="nav-link" to="/holybible">
+                  القداسات
                 </Link>
               </li>
               <li>
@@ -101,6 +102,9 @@ const Footer = () => {
                     // target="_blank"
                     >
                       <FontAwesomeIcon icon={faWhatsapp} />
+                    </Link>
+                    <Link to="/" target="_blank">
+                      <FontAwesomeIcon icon={faYoutube} />
                     </Link>
                   </div>
                 </li>
