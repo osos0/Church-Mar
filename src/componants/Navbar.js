@@ -77,7 +77,7 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  الأنشطة
+                  مشروعات كنسية
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
