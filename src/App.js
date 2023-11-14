@@ -6,9 +6,9 @@ import Thebrand from "./componants/Thebrand";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Ourchurch from "./pages/Ourchurch";
-import Holybible from "./pages/Holybible";
 import Footer from "./componants/Footer";
-import Kodas from "./pages/Kodas";
+import Manglia from "./pages/Manglia";
+import Holybible from "./pages/MangliaPages/Holybible";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ourchurch" element={<Ourchurch />} />
+        <Route path="/manglia" element={<Manglia />} />
         <Route path="/holybible" element={<Holybible />} />
-        <Route path="/kodas" element={<Kodas />} />
       </Routes>
       <Footer />
     </>

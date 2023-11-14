@@ -1,0 +1,40 @@
+@use "../styles/Vars" as *;
+
+.holybilble {
+  .holybilblerow {
+    .holybilblerowChild1 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0px;
+      select {
+        width: 30%;
+        padding: 10px 0px;
+        outline: none;
+        border: 2px solid $aquamarine !important;
+        border-radius: 10px;
+      }
+    }
+    .holybilblerowChild2 {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      margin: 30px 0px;
+      h2 {
+        margin: 20px 0px;
+      }
+      h4 {
+        margin: 20px 0px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 25px;
+        line-height: 45px;
+      }
+    }
+  }
+}

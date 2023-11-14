@@ -174,8 +174,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/holybible">
-                  الكتاب المقدس
+                <Link className="nav-link" to="/manglia">
+                  المنجلية
                 </Link>
               </li>
               <li className="nav-item ">
