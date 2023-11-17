@@ -1,15 +1,29 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import takwine from "../../data/Holy-Bible/old/1TakwenGenesis.js";
-import TakwenGenesis1 from "../../data/Holy-Bible/old/1TakwenGenesis.js";
+import Allold from "../../data/Holy-Bible/old/0Allold";
+import Allnew from "../../data/Holy-Bible/new/0Allnew";
 
 const Holybilble = () => {
-  // kind section
+  // kind section between عهد جديد و عهد قديم
   const [kind, setKind] = useState("العهد القديم");
+
+  // choose sefr indebencse of the kind of old or new
   const [sefr, setSefr] = useState("سفر التكوين");
 
+  //
+  const [optionOfKind, setOptionOfKind] = useState("1");
+
+  // number of es7a7
   const [numberofseferold, setNumberofseferold] = useState(50);
   const [numberofsefernew, setNumberofsefernew] = useState(28);
+
+  //name of the option (سفر التكوين)  label value
+  const [Labelofsefernew, setLabelofsefernew] = useState("إنجيل متى");
+  const [Labelofseferold, setLabelofseferold] = useState("سقر التكوين");
+
+  // innerHTML of erery option ele
+  const [innernew, setInnernew] = useState("mata");
+  const [innerold, setInnerold] = useState("takwen");
 
   useEffect(() => {
     if (kind === "العهد الجديد") {
@@ -18,9 +32,16 @@ const Holybilble = () => {
           onClick={(e) => {
             const valNumNew = e.target.value;
             setNumberofsefernew(valNumNew);
+            const labelsefr = e.target.options[e.target.selectedIndex].label;
+            setLabelofsefernew(labelsefr);
+
+            const ino = e.target.options[e.target.selectedIndex].innerHTML;
+            setInnernew(ino);
           }}
         >
-          <option value="28" label="إنجيل متى" />
+          <option value="28" label="إنجيل متى">
+            mata
+          </option>
           <option value="16" label=" إنجيل مرقس" />
           <option value="24" label="إنجيل لوقا" />
           <option value="21" label="إنجيل يوحنا" />
@@ -55,9 +76,16 @@ const Holybilble = () => {
           onClick={(e) => {
             const valNumOld = e.target.value;
             setNumberofseferold(valNumOld);
+            const labelsefr = e.target.options[e.target.selectedIndex].label;
+            setLabelofseferold(labelsefr);
+
+            const ino = e.target.options[e.target.selectedIndex].innerHTML;
+            setInnerold(ino);
           }}
         >
-          <option value="50" label="سفر التكوين" />
+          <option value="50" label="سفر التكوين">
+            takwen
+          </option>
           <option value="40" label="سفر الخروج" />
           <option value="27" label="سفر اللاويين" />
           <option value="36" label="سفر العدد" />
@@ -114,6 +142,7 @@ const Holybilble = () => {
       <div className="container holybilble">
         <div className="row holybilblerow">
           <div className="col-lg-12 col-md-12 col-md-12 holybilblerowChild1">
+            {/* العهد */}
             <select
               onChange={(e) => {
                 const selectedKind = e.target.value;
@@ -124,9 +153,16 @@ const Holybilble = () => {
               <option value="العهد الجديد">العهد الجديد</option>
             </select>
 
+            {/* السفر */}
             {sefr}
 
-            <select>
+            {/* الاصحاح */}
+            <select
+              onChange={(e) => {
+                const sekind = e.target.value;
+                setOptionOfKind(sekind);
+              }}
+            >
               {generateOptions(
                 kind === "العهد الجديد" ? numberofsefernew : numberofseferold
               )}
@@ -134,10 +170,18 @@ const Holybilble = () => {
           </div>
           <div className="col-lg-12 col-md-12 col-md-12 holybilblerowChild2">
             <h4>{kind}</h4>
-            {/* <h2>سفر التكوين</h2> */}
-            <h2>{TakwenGenesis1[0].title}</h2>
-            <h4> {TakwenGenesis1[0].id}</h4>
-            <p>{TakwenGenesis1[0].text1}</p>
+            <h2>
+              {kind === "العهد الجديد" ? Labelofsefernew : Labelofseferold}
+            </h2>
+            <h4>{optionOfKind}</h4>
+            <h4>{innernew}</h4>
+            <h4>{innerold}</h4>
+            {/* <h4>{kind === "العهد الجديد" ? innernew : innerold}</h4> */}
+            <p>
+              {kind === "العهد الجديد"
+                ? Allnew.mata.text[optionOfKind - 1]
+                : Allold.takwen.text[optionOfKind - 1]}
+            </p>
           </div>
         </div>
       </div>
