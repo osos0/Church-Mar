@@ -23,3 +23,16 @@
   justify-content: flex-end;
   align-items: center;
 }
+
+// Mobile Screens
+@media (max-width: 960px) {
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+  }
+}
+// Small Screens
+@media (min-width: 768px) {
+  .navbar-nav {
+    // flex-direction: column-reverse !important;
+  }
+}
