@@ -1,6 +1,6 @@
 const massegeForahalTemsawestwo = {
   id: 1,
-  title: "massegeForahalTemsawes",
+  title: "الرسالة الثانية إلى تيموثاوس",
   text: ["الأصحاح الأول", "الأصحاح الثاني", "الأصحاح الثالث"],
 };
 

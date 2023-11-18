@@ -18,8 +18,8 @@ const Holybilble = () => {
   const [numberofsefernew, setNumberofsefernew] = useState(28);
 
   //name of the option (سفر التكوين)  label value
-  const [Labelofsefernew, setLabelofsefernew] = useState("إنجيل متى");
-  const [Labelofseferold, setLabelofseferold] = useState("سفر التكوين");
+  // const [Labelofsefernew, setLabelofsefernew] = useState("إنجيل متى");
+  // const [Labelofseferold, setLabelofseferold] = useState("سفر التكوين");
 
   // innerHTML of erery option ele
   const [innernew, setInnernew] = useState("mata");
@@ -32,8 +32,8 @@ const Holybilble = () => {
           onClick={(e) => {
             const valNumNew = e.target.value;
             setNumberofsefernew(valNumNew);
-            const labelsefr = e.target.options[e.target.selectedIndex].label;
-            setLabelofsefernew(labelsefr);
+            // const labelsefr = e.target.options[e.target.selectedIndex].label;
+            // setLabelofsefernew(labelsefr);
 
             const ino = e.target.options[e.target.selectedIndex].innerHTML;
             setInnernew(ino);
@@ -128,8 +128,8 @@ const Holybilble = () => {
           onClick={(e) => {
             const valNumOld = e.target.value;
             setNumberofseferold(valNumOld);
-            const labelsefr = e.target.options[e.target.selectedIndex].label;
-            setLabelofseferold(labelsefr);
+            // const labelsefr = e.target.options[e.target.selectedIndex].label;
+            // setLabelofseferold(labelsefr);
 
             const ino = e.target.options[e.target.selectedIndex].innerHTML;
             setInnerold(ino);
@@ -298,16 +298,21 @@ const Holybilble = () => {
           </div>
           <div className="col-lg-12 col-md-12 col-md-12 holybilblerowChild2">
             <h4>{kind}</h4>
-            <h2>
+            {/* <h2>
               {kind === "العهد الجديد" ? Labelofsefernew : Labelofseferold}
+            </h2> */}
+            <h2>
+              {kind === "العهد القديم"
+                ? Allold[innerold].title
+                : Allnew[innernew].title}
             </h2>
             <h4>{optionOfKind}</h4>
 
             {/* <h4>{kind === "العهد الجديد" ? innernew : innerold}</h4> */}
             <p>
-              {kind === "العهد الجديد"
-                ? Allnew[innernew].text[optionOfKind - 1]
-                : Allold[innerold].text[optionOfKind - 1]}
+              {kind === "العهد القديم"
+                ? Allold[innerold].text[optionOfKind - 1]
+                : Allnew[innernew].text[optionOfKind - 1]}
             </p>
           </div>
         </div>
