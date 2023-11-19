@@ -26,103 +26,7 @@ const Holybilble = () => {
   const [innerold, setInnerold] = useState("takwen");
 
   useEffect(() => {
-    if (kind === "العهد الجديد") {
-      setSefr(
-        <select
-          onClick={(e) => {
-            const valNumNew = e.target.value;
-            setNumberofsefernew(valNumNew);
-            // const labelsefr = e.target.options[e.target.selectedIndex].label;
-            // setLabelofsefernew(labelsefr);
-
-            const ino = e.target.options[e.target.selectedIndex].innerHTML;
-            setInnernew(ino);
-          }}
-        >
-          <option value="28" label="إنجيل متى">
-            mata
-          </option>
-          <option value="16" label=" إنجيل مرقس">
-            marcos
-          </option>
-          <option value="24" label="إنجيل لوقا">
-            loka
-          </option>
-          <option value="21" label="إنجيل يوحنا">
-            youhana
-          </option>
-          <option value="28" label="أعمال الرسل">
-            amalElrosl
-          </option>
-          <option value="16" label="الرسالة إلى أهل رومية">
-            massegeForahalRomia
-          </option>
-          <option value="16" label="الرسالة الأولى إلى أهل كورنثوس">
-            massegeForahalKoronsose
-          </option>
-          <option value="13" label="الرسالة الثانية إلى أهل كورنثوس">
-            massegeForahalkoronsostwo
-          </option>
-          <option value="6" label="الرسالة إلى أهل غلاطية">
-            massegeForahalgaltiah
-          </option>
-          <option value="6" label="الرسالة إلى أهل أفسس">
-            massegeForahalAfsos
-          </option>
-          <option value="4" label="الرسالة إلى أهل فيلبى">
-            massegeForahalfelipe
-          </option>
-          <option value="4" label="الرسالة إلى أهل كولوسى">
-            massegeForahalKolosi
-          </option>
-          <option value="5" label="الرسالة الأولى إلى أهل تسالونيكى">
-            massegeForahalTaslokonie
-          </option>
-          <option value="3" label="الرسالة الثانية إلى أهل تسالونيكى">
-            massegeForahalTaslokonietwo
-          </option>
-          <option value="6" label="الرسالة الأولى إلى تيموثاوس">
-            massegeForahalTemsawes
-          </option>
-          <option value="4" label="الرسالة الثانية إلى تيموثاوس">
-            massegeForahalTemsawestwo
-          </option>
-          <option value="3" label="الرسالة إلى تيطس">
-            massegeForahalTitas
-          </option>
-          <option value="1" label="الرسالة إلى فليمون">
-            massegeForahalfilmon
-          </option>
-          <option value="13" label="الرسالة إلى العبرانيين">
-            massegeForahalAbranion
-          </option>
-          <option value="5" label="رسالة يعقوب">
-            massegeyaakob
-          </option>
-          <option value="5" label="رسالة بطرس الأولى">
-            massegeBotroseone
-          </option>
-          <option value="3" label="رسالة بطرس الثانية">
-            massegeBotrosetwo
-          </option>
-          <option value="5" label="رسالة يوحنا الأولى">
-            massegeyohanaOne
-          </option>
-          <option value="1" label="رسالة يوحنا الثانية">
-            massegeyohanatwo
-          </option>
-          <option value="1" label="رسالة يوحنا الثالثة">
-            massegeyohanaThree
-          </option>
-          <option value="1" label="رسالة يهوذا">
-            massegeYahoza
-          </option>
-          <option value="22" label="رؤيا يوحنا">
-            RoayaYohana
-          </option>
-        </select>
-      );
-    } else {
+    if (kind === "العهد القديم") {
       setSefr(
         <select
           onClick={(e) => {
@@ -251,6 +155,102 @@ const Holybilble = () => {
           </option>
           <option value="4" label="سفر ملاخى">
             Malkhe
+          </option>
+        </select>
+      );
+    } else {
+      setSefr(
+        <select
+          onClick={(e) => {
+            const valNumNew = e.target.value;
+            setNumberofsefernew(valNumNew);
+            // const labelsefr = e.target.options[e.target.selectedIndex].label;
+            // setLabelofsefernew(labelsefr);
+
+            const ino = e.target.options[e.target.selectedIndex].innerHTML;
+            setInnernew(ino);
+          }}
+        >
+          <option value="28" label="إنجيل متى">
+            mata
+          </option>
+          <option value="16" label=" إنجيل مرقس">
+            marcos
+          </option>
+          <option value="24" label="إنجيل لوقا">
+            loka
+          </option>
+          <option value="21" label="إنجيل يوحنا">
+            youhana
+          </option>
+          <option value="28" label="أعمال الرسل">
+            amalElrosl
+          </option>
+          <option value="16" label="الرسالة إلى أهل رومية">
+            massegeForahalRomia
+          </option>
+          <option value="16" label="الرسالة الأولى إلى أهل كورنثوس">
+            massegeForahalKoronsose
+          </option>
+          <option value="13" label="الرسالة الثانية إلى أهل كورنثوس">
+            massegeForahalkoronsostwo
+          </option>
+          <option value="6" label="الرسالة إلى أهل غلاطية">
+            massegeForahalgaltiah
+          </option>
+          <option value="6" label="الرسالة إلى أهل أفسس">
+            massegeForahalAfsos
+          </option>
+          <option value="4" label="الرسالة إلى أهل فيلبى">
+            massegeForahalfelipe
+          </option>
+          <option value="4" label="الرسالة إلى أهل كولوسى">
+            massegeForahalKolosi
+          </option>
+          <option value="5" label="الرسالة الأولى إلى أهل تسالونيكى">
+            massegeForahalTaslokonie
+          </option>
+          <option value="3" label="الرسالة الثانية إلى أهل تسالونيكى">
+            massegeForahalTaslokonietwo
+          </option>
+          <option value="6" label="الرسالة الأولى إلى تيموثاوس">
+            massegeForahalTemsawes
+          </option>
+          <option value="4" label="الرسالة الثانية إلى تيموثاوس">
+            massegeForahalTemsawestwo
+          </option>
+          <option value="3" label="الرسالة إلى تيطس">
+            massegeForahalTitas
+          </option>
+          <option value="1" label="الرسالة إلى فليمون">
+            massegeForahalfilmon
+          </option>
+          <option value="13" label="الرسالة إلى العبرانيين">
+            massegeForahalAbranion
+          </option>
+          <option value="5" label="رسالة يعقوب">
+            massegeyaakob
+          </option>
+          <option value="5" label="رسالة بطرس الأولى">
+            massegeBotroseone
+          </option>
+          <option value="3" label="رسالة بطرس الثانية">
+            massegeBotrosetwo
+          </option>
+          <option value="5" label="رسالة يوحنا الأولى">
+            massegeyohanaOne
+          </option>
+          <option value="1" label="رسالة يوحنا الثانية">
+            massegeyohanatwo
+          </option>
+          <option value="1" label="رسالة يوحنا الثالثة">
+            massegeyohanaThree
+          </option>
+          <option value="1" label="رسالة يهوذا">
+            massegeYahoza
+          </option>
+          <option value="22" label="رؤيا يوحنا">
+            RoayaYohana
           </option>
         </select>
       );
