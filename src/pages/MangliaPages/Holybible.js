@@ -11,11 +11,11 @@ const Holybilble = () => {
   const [sefr, setSefr] = useState("سفر التكوين");
 
   //
-  const [optionOfKind, setOptionOfKind] = useState("1");
+  const [optionOfKind, setOptionOfKind] = useState(0);
 
   // number of es7a7
-  const [numberofseferold, setNumberofseferold] = useState(50);
-  const [numberofsefernew, setNumberofsefernew] = useState(28);
+  const [numberofseferold, setNumberofseferold] = useState(0);
+  const [numberofsefernew, setNumberofsefernew] = useState(0);
 
   //name of the option (سفر التكوين)  label value
   // const [Labelofsefernew, setLabelofsefernew] = useState("إنجيل متى");
@@ -27,6 +27,7 @@ const Holybilble = () => {
 
   useEffect(() => {
     if (kind === "العهد القديم") {
+      setOptionOfKind("الكتاب المقدس");
       setSefr(
         <select
           onClick={(e) => {
@@ -159,6 +160,7 @@ const Holybilble = () => {
         </select>
       );
     } else {
+      setOptionOfKind("الكتاب المقدس");
       setSefr(
         <select
           onClick={(e) => {
@@ -288,6 +290,7 @@ const Holybilble = () => {
             <select
               onChange={(e) => {
                 const sekind = e.target.value;
+
                 setOptionOfKind(sekind);
               }}
             >
@@ -297,17 +300,16 @@ const Holybilble = () => {
             </select>
           </div>
           <div className="col-lg-12 col-md-12 col-md-12 holybilblerowChild2">
-            <h4>{kind}</h4>
+            {/* <h4>{kind}</h4> */}
             {/* <h2>
               {kind === "العهد الجديد" ? Labelofsefernew : Labelofseferold}
             </h2> */}
-            <h2>
+            {/* <h2>
               {kind === "العهد القديم"
                 ? Allold[innerold].title
                 : Allnew[innernew].title}
-            </h2>
+            </h2> */}
             <h4>{optionOfKind}</h4>
-
             {/* <h4>{kind === "العهد الجديد" ? innernew : innerold}</h4> */}
             <p>
               {kind === "العهد القديم"
