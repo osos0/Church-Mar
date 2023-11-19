@@ -23,7 +23,7 @@ import massegeBotrosetwo from "../new/22massegeBotrosetwo";
 import massegeyohanaOne from "../new/23massegeyohanaOne";
 import massegeyohanatwo from "../new/24massegeyohanatwo";
 import massegeyohanaThree from "../new/25massegeyohanaThree";
-import massegeYahoza from "../new/26massegeYahoza - Copy";
+import massegeYahoza from "./26massegeYahoza";
 import RoayaYohana from "../new/27RoayaYohana";
 
 const Allnew = {
