@@ -27,7 +27,7 @@ const Holybilble = () => {
 
   useEffect(() => {
     if (kind === "العهد القديم") {
-      setOptionOfKind("الكتاب المقدس");
+      setOptionOfKind("1");
       setSefr(
         <select
           onChange={(e) => {
@@ -160,7 +160,7 @@ const Holybilble = () => {
         </select>
       );
     } else {
-      setOptionOfKind("الكتاب المقدس");
+      setOptionOfKind("1");
       setSefr(
         <select
           onChange={(e) => {
