@@ -28,161 +28,161 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item ">
-                <Link className="nav-link" to="/ourchurch">
+                <a className="nav-link" href="/ourchurch">
                   عن كنيستنا
-                </Link>
+                </a>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <a
                   className="nav-link dropdown-toggle"
-                  to="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   الأباء الكهنه
-                </Link>
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أبونا فيلوباتير
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أبونا مرقس
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أبونا ايلاريون
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أبونا يوحنا
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أبونا صموئيل
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <a
                   className="nav-link dropdown-toggle"
-                  to="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   مشروعات كنسية
-                </Link>
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="#">
-                      مركز الكاروز الطبي{" "}
-                    </Link>
+                    <a className="dropdown-item" href="/">
+                      مركز الكاروز الطبي
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       مكتب الرحلات{" "}
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       المكتبه{" "}
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       استراحة الدور الاول{" "}
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أستراحه الدور الثاني عشر{" "}
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       الحضانه{" "}
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <a
                   className="nav-link dropdown-toggle"
-                  to="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   مدارس الأحد
-                </Link>
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       كي جي
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       المرحله الابتدائيه
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       المرحله الأعدايه
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       المرحله الثانويه
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <Link
+                <a
                   className="nav-link dropdown-toggle"
-                  to="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   أجتماعات
-                </Link>
+                </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أجتماع 1
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="#">
+                    <a className="dropdown-item" href="/">
                       أجتماع 2
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/kodas">
+                <a className="nav-link" href="/kodas">
                   القداسات
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/manglia">
+                <a className="nav-link" href="/manglia">
                   المنجلية
-                </Link>
+                </a>
               </li>
               <li className="nav-item ">
-                <Link className="nav-link" to="/">
+                <a className="nav-link" href="/">
                   الرئيسية
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
