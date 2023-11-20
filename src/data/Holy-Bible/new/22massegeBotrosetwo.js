@@ -1,7 +1,7 @@
 const massegeBotrosetwo = {
   id: 1,
   title: "رسالة بطرس الثانية",
-  text: ["الأصحاح الأول", "الأصحاح الثاني", "الأصحاح الثالث"],
+  text: [],
 };
 
 export default massegeBotrosetwo;
