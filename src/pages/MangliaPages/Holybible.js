@@ -35,14 +35,13 @@ const Holybilble = () => {
             setNumberofseferold(valNumOld);
             // const labelsefr = e.target.options[e.target.selectedIndex].label;
             // setLabelofseferold(labelsefr);
-            setOptionOfKind(e.target.options[e.target.selectedIndex] + 1);
+            setOptionOfKind(e.target.options[e.target.selectedIndex] + 2);
 
             const ino = e.target.options[e.target.selectedIndex].innerHTML;
             setInnerold(ino);
           }}
         >
-          {/* <option value="أختر السفر" /> */}
-
+          <option value="" />
           <option value="50" label="سفر التكوين">
             takwen
           </option>
@@ -177,7 +176,7 @@ const Holybilble = () => {
             setInnernew(ino);
           }}
         >
-          {/* <option value="أختر السفر" /> */}
+          <option value="" />
           <option value="28" label="إنجيل متى">
             mata
           </option>
@@ -282,6 +281,10 @@ const Holybilble = () => {
               onChange={(e) => {
                 const selectedKind = e.target.value;
                 setKind(selectedKind);
+
+                setInnernew("mata");
+                setInnerold("takwen");
+                setSefr("1");
               }}
             >
               <option value=""> </option>
