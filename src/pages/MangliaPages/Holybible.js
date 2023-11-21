@@ -26,6 +26,7 @@ const Holybilble = () => {
   const [innerold, setInnerold] = useState("takwen");
 
   useEffect(() => {
+    setOptionOfKind("1");
     if (kind === "العهد القديم") {
       setSefr(
         <select
@@ -40,7 +41,7 @@ const Holybilble = () => {
             setInnerold(ino);
           }}
         >
-          <option value="أختر السفر" />
+          {/* <option value="أختر السفر" /> */}
 
           <option value="50" label="سفر التكوين">
             takwen
@@ -176,7 +177,7 @@ const Holybilble = () => {
             setInnernew(ino);
           }}
         >
-          <option value="0" label="أختر الأنجيل" />
+          {/* <option value="أختر السفر" /> */}
           <option value="28" label="إنجيل متى">
             mata
           </option>
@@ -264,7 +265,7 @@ const Holybilble = () => {
   }, [kind]);
 
   const generateOptions = (numberofsefernew) => {
-    let options = [<option value="90" label="أختر الأنجيل" />];
+    let options = [<option value="" label="" />];
     for (let i = 1; i <= numberofsefernew; i++) {
       options.push(<option key={i} value={i} label={i} />);
     }
@@ -283,7 +284,7 @@ const Holybilble = () => {
                 setKind(selectedKind);
               }}
             >
-              <option value="أختر العهد">أختر السفر</option>
+              <option value=""> </option>
               <option value="العهد القديم">العهد القديم</option>
               <option value="العهد الجديد">العهد الجديد</option>
             </select>

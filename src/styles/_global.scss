@@ -6,6 +6,7 @@ li {
 
 * {
   font-family: "Caveat", cursive !important;
+  // background-color: $white;
 }
 
 h2 {
@@ -31,4 +32,17 @@ svg {
   justify-content: center;
   align-items: center;
   font-size: 50px;
+}
+
+// Mobile Screens
+@media (max-width: 960px) {
+  .navbar-nav {
+    flex-direction: column-reverse !important;
+  }
+}
+// Small Screens
+@media (min-width: 768px) {
+  .navbar-nav {
+    // flex-direction: column-reverse !important;
+  }
 }
