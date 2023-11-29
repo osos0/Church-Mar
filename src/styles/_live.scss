@@ -51,6 +51,31 @@
           }
         }
       }
+      animation: greenBack 2s ease-in-out infinite;
+    }
+
+    @keyframes greenBack {
+      20% {
+        background: linear-gradient(
+          (rgb(61, 94, 8, 20%)),
+          transparent,
+          (rgb(61, 94, 8, 20%))
+        );
+      }
+      50% {
+        background: linear-gradient(
+          transparent,
+          (rgb(61, 94, 8, 40%)),
+          transparent
+        );
+      }
+      80% {
+        background: linear-gradient(
+          (rgb(61, 94, 8, 20%)),
+          transparent,
+          (rgb(61, 94, 8, 20%))
+        );
+      }
     }
     .kodasmini {
       display: flex;
@@ -63,13 +88,9 @@
       border: 1px solid $aquamarine;
       padding: 10px;
       overflow: hidden;
-      background: linear-gradient(
-        (rgb(61, 94, 8, 20%)),
-        transparent,
-        (rgb(61, 94, 8, 20%))
-      );
       border: 1px solid $aquamarine;
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+      opacity: 80%;
       .kodasleftmini {
         text-align: center;
         // border: 1px solid red;
@@ -106,6 +127,12 @@
           }
         }
       }
+
+      background: linear-gradient(
+        (rgb(61, 94, 8, 20%)),
+        transparent,
+        (rgb(61, 94, 8, 20%))
+      );
     }
   }
   // اجتماعات
@@ -155,6 +182,44 @@
             box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
           }
         }
+      }
+    }
+  }
+  .stopAndlive {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center;
+    .stopAndliveChild1 {
+      border: 1px solid red !important;
+      width: 10px;
+      height: 10px !important;
+      border-radius: 50%;
+      background-color: red !important;
+      animation: Reddot 500ms infinite alternate;
+    }
+
+    @keyframes Reddot {
+      0% {
+        opacity: 100%;
+      }
+      100% {
+        opacity: 0%;
+      }
+    }
+    .stopAndliveChild2 {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0) !important;
+      font-size: 24px;
+      font-weight: 700;
+      animation: moverwoman 2s infinite alternate;
+    }
+
+    @keyframes moverwoman {
+      0% {
+        color: red;
+      }
+      100% {
+        color: black;
       }
     }
   }

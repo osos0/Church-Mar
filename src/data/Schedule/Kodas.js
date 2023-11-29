@@ -1,8 +1,26 @@
 const scheduleKodas = {
+  0: {
+    id: 0,
+    day: " الأحد ",
+    listkodas: [
+      {
+        name: "الأول",
+        start: "08:00 AM",
+        end: "10:00 AM",
+        mazbah: " مارمرقس ",
+      },
+      {
+        name: "الثاني",
+        start: "10:00 AM",
+        end: "12:00 PM",
+        mazbah: " ماريوحنا ",
+      },
+    ],
+  },
   1: {
     id: 1,
     day: " الأثنين ",
-    listofkodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -20,7 +38,7 @@ const scheduleKodas = {
   2: {
     id: 2,
     day: " الثلاثاء ",
-    listofKodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -31,6 +49,12 @@ const scheduleKodas = {
         name: "الثاني",
         start: "10:00 AM",
         end: "12:00 PM",
+        mazbah: " ماريوحنا ",
+      },
+      {
+        name: "الثالث",
+        start: "12:00 AM",
+        end: "15:00 PM",
         mazbah: " ماريوحنا ",
       },
     ],
@@ -38,7 +62,7 @@ const scheduleKodas = {
   3: {
     id: 3,
     day: " الأربعاء ",
-    listofKodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -51,12 +75,18 @@ const scheduleKodas = {
         end: "12:00 PM",
         mazbah: " ماريوحنا ",
       },
+      {
+        name: "الثالث",
+        start: "12:00 PM",
+        end: "15:00 PM",
+        mazbah: " ماريوحنا ",
+      },
     ],
   },
   4: {
     id: 4,
     day: " الخميس ",
-    listofKodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -74,7 +104,7 @@ const scheduleKodas = {
   5: {
     id: 5,
     day: " الجمعة ",
-    listofKodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -92,7 +122,7 @@ const scheduleKodas = {
   6: {
     id: 6,
     day: " السبت ",
-    listofKodas: [
+    listkodas: [
       {
         name: "الأول",
         start: "08:00 AM",
@@ -109,12 +139,12 @@ const scheduleKodas = {
   },
   7: {
     id: 7,
-    day: " الأحد ",
-    listofKodas: [
+    day: " تجربه",
+    listkodas: [
       {
         name: "الأول",
-        start: "08:00 AM",
-        end: "10:00 AM",
+        start: "08:30 AM",
+        end: "10:30 AM",
         mazbah: " مارمرقس ",
       },
       {
@@ -122,6 +152,12 @@ const scheduleKodas = {
         start: "10:00 AM",
         end: "12:00 PM",
         mazbah: " ماريوحنا ",
+      },
+      {
+        name: "تجربه",
+        start: "12:10 AM",
+        end: "18:25 PM",
+        mazbah: " تجربه ",
       },
     ],
   },
