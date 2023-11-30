@@ -88,9 +88,15 @@ const scheduleMeetings = {
         mazbah: " ماريوحنا ",
       },
       {
-        name: "الرابع",
-        start: "17:00 PM",
-        end: "18:00 PM",
+        name: "الخامس",
+        start: "18:00 PM",
+        end: "20:00 PM",
+        mazbah: " ماريوحنا ",
+      },
+      {
+        name: "الخامس",
+        start: "20:00 PM",
+        end: "22:00 PM",
         mazbah: " ماريوحنا ",
       },
     ],

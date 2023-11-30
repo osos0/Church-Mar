@@ -39,6 +39,9 @@ svg {
   .navbar-nav {
     flex-direction: column-reverse !important;
   }
+  .kodasrightPic {
+    // display: none !important;
+  }
 }
 // Small Screens
 @media (min-width: 768px) {
