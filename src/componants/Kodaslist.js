@@ -14,7 +14,7 @@ const Kodaslist = () => {
   }, []);
 
   return (
-    <div className="container LiveCon">
+    <div className=" LiveCon">
       <div className="conOfKodases">
         <h2 className="ConOfTitle">قداسات اليوم</h2>
         {kodasSchadule[new Date().getDay()].listkodas.map((kod, index) => {

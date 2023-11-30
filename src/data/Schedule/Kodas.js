@@ -137,30 +137,6 @@ const scheduleKodas = {
       },
     ],
   },
-  7: {
-    id: 7,
-    day: " تجربه",
-    listkodas: [
-      {
-        name: "الأول",
-        start: "08:30 AM",
-        end: "10:30 AM",
-        mazbah: " مارمرقس ",
-      },
-      {
-        name: "الثاني",
-        start: "10:00 AM",
-        end: "12:00 PM",
-        mazbah: " ماريوحنا ",
-      },
-      {
-        name: "تجربه",
-        start: "12:10 AM",
-        end: "18:25 PM",
-        mazbah: " تجربه ",
-      },
-    ],
-  },
 };
 
 export default scheduleKodas;

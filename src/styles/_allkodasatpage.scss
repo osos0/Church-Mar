@@ -1,0 +1,45 @@
+@use "../styles/Vars" as *;
+
+.allKodasat {
+  .conOfTheWeek {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .conOfTheday {
+      h3 {
+        color: $aquamarine !important;
+        font-family: "Amiri", serif !important;
+        font-weight: 500 !important;
+        font-size: 35px !important;
+      }
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .totalOfkodasat {
+        width: 100%;
+        .kodasChildoo {
+          border: 1px solid $aquamarine;
+          border-radius: 20px;
+          padding: 3px;
+          width: 100%;
+          margin-top: 10px;
+          text-align: right;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          align-items: center;
+
+          .kodastitleinweek {
+            color: $aquamarineDark !important;
+            font-weight: 600;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

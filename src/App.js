@@ -9,6 +9,8 @@ import Ourchurch from "./pages/Ourchurch";
 import Footer from "./componants/Footer";
 import Manglia from "./pages/Manglia";
 import Holybible from "./pages/MangliaPages/Holybible";
+import KodasPage from "./pages/KodasPage";
+import MeetingPage from "./pages/MeetingPage";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/ourchurch" element={<Ourchurch />} />
         <Route path="/manglia" element={<Manglia />} />
         <Route path="/holybible" element={<Holybible />} />
+        <Route path="/kodas" element={<KodasPage />} />
+        <Route path="/meeting" element={<MeetingPage />} />
       </Routes>
       <Footer />
     </>

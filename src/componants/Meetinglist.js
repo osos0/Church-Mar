@@ -14,7 +14,7 @@ const Meetinglist = () => {
   }, []);
 
   return (
-    <div className="container LiveCon">
+    <div className=" LiveCon">
       <div className="conOfKodases">
         <h2 className="ConOfTitle">إجتماعات اليوم</h2>
         {meetingSchadule[new Date().getDay()].listkodas.map((kod, index) => {

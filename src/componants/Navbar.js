@@ -146,28 +146,11 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item dropdown">
-                <Link
-                  className="nav-link dropdown-toggle"
-                  to="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  أجتماعات
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/meeting">
+                  الإجتماعات
                 </Link>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      أجتماع 1
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#">
-                      أجتماع 2
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/kodas">
