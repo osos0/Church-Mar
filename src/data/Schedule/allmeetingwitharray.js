@@ -139,4 +139,55 @@ const allMeeting = [
   },
 ];
 
+export const MeetingByMeeting = [
+  {
+    id: 0,
+    day: "الجمعة",
+    name: " افهم طفلك ",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+  {
+    id: 1,
+    day: "السبت",
+    name: " العام ",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+  {
+    id: 1,
+    day: "الأحد",
+    name: "تفسير الكتاب",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+  {
+    id: 1,
+    day: "الأثنين",
+    name: " المتزوجين حديثا ",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+  {
+    id: 1,
+    day: "الثلاثاء",
+    name: " الصلاة ",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+  {
+    id: 1,
+    day: "الأربعاء",
+    name: " شباب ",
+    start: " 08:00 ",
+    end: " 10:00 ",
+    mazbah: " مارمرقس ",
+  },
+];
+
 export default allMeeting;

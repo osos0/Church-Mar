@@ -23,24 +23,24 @@ const Ourchurch = () => {
         <Header />
         <div className="row chuOthersSection">
           <div className="col-lg-8 col-md-6 col-sm-12 detialsChild">
-            <h2> شفيع الكنيسة</h2>
+            <h2 className="ConOfTitle"> شفيع الكنيسة</h2>
             <div>القديس مرقس الرسول والإنجيلي والشهيد البطريرك الأول</div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 detialsChild">
-            <h2> العنوان</h2>
+            <h2 className="ConOfTitle"> العنوان</h2>
             <div>شارع الـ15، الخمسين، النزهة الجديدة 2، جسر السويس.</div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 detialsChild">
-            <h2> الإيبارشية</h2>
+            <h2 className="ConOfTitle"> الإيبارشية</h2>
             <div>منطقة مدينة السلام والحرفيين، بالقاهرة</div>
           </div>
           <div className="col-lg-8 col-md-6 col-sm-12 detialsChild">
-            <h2> الأسقف</h2>
+            <h2 className="ConOfTitle"> الأسقف</h2>
             <div>الأنبا مكسيموس</div>
           </div>
         </div>
         <div className="row chuOthersSection">
-          <h2> أعياد شفيع الكنيسة</h2>
+          <h2 className="ConOfTitle"> أعياد شفيع الكنيسة</h2>
           <div className="row marmarcoFather">
             <div className="col-lg-5 col-md-6 col-sm-12 marmarPic">
               <img src={marMar} alt="marmarcose" />
@@ -64,7 +64,7 @@ const Ourchurch = () => {
           </div>
         </div>
         <div className="row chuOthersSection">
-          <h2> أجساد ورفات وذخائر بالكنيسة</h2>
+          <h2 className="ConOfTitle"> أجساد ورفات وذخائر بالكنيسة</h2>
           <div className="row chuOthersSection2">
             <div className="col-lg-12 col-md-12 col-sm-12 rightBodies">
               <div className="rightBodiesChild">
@@ -143,7 +143,7 @@ const Ourchurch = () => {
           </div>
         </div>
         <div className="row chuOthersSection">
-          <h2>كهنة الكنيسة</h2>
+          <h2 className="ConOfTitle">كهنة الكنيسة</h2>
           <div className="row fathersFlex">
             <div className="col-lg-4 col-md-6 col-sm-12 ">
               <div className="faCon">

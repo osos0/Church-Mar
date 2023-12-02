@@ -87,6 +87,7 @@
         // width: 100%;
         img {
           max-width: 100%;
+          filter: drop-shadow(5px 30px 5px rgba(0, 0, 0, 0.4));
         }
       }
       .marmarText {

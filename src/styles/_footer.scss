@@ -15,10 +15,12 @@
       h5,
       p {
         color: $aquamarineDark;
+        filter: drop-shadow(5px 15px 4px rgba(0, 0, 0, 0.3));
       }
       .fotPicCon {
         img {
           max-width: 100px;
+          filter: drop-shadow(5px 15px 4px rgba(0, 0, 0, 0.3));
         }
       }
     }
@@ -47,6 +49,7 @@
   .titleFooterH2 {
     width: 100%;
     color: $aquamarineDark;
+    filter: drop-shadow(5px 15px 4px rgba(0, 0, 0, 0.3));
   }
 
   .ulcon {
@@ -58,5 +61,6 @@
   }
   svg {
     padding-left: 20px;
+    filter: drop-shadow(5px 15px 4px rgba(0, 0, 0, 0.3));
   }
 }
