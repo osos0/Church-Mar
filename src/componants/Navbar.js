@@ -88,27 +88,32 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      مكتب الرحلات{" "}
+                      مكتب الرحلات
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      المكتبه{" "}
+                      المكتبه
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      استراحة الدور الاول{" "}
+                      استراحة الدور الاول
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      أستراحه الدور الثاني عشر{" "}
+                      أستراحه الدور الثاني عشر
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      الحضانه{" "}
+                      الحضانه
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="#">
+                      حجز المناسبات
                     </Link>
                   </li>
                 </ul>
@@ -121,32 +126,31 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  مدارس الأحد
+                  خدمات الكنيسة
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="#">
-                      كي جي
+                    <Link className="dropdown-item" to="/sundayschools">
+                      مدارس الأحد
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      المرحله الابتدائيه
+                      الكشافة
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      المرحله الأعدايه
+                      مدرسة الألحان
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="#">
-                      المرحله الثانويه
+                      أعداد خدام
                     </Link>
                   </li>
                 </ul>
               </li>
-
               <li className="nav-item">
                 <Link className="nav-link" to="/meeting">
                   الإجتماعات

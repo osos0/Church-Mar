@@ -1,0 +1,28 @@
+@use "../styles/Vars" as *;
+
+.eachclass {
+  padding: 20px 0;
+  text-align: center;
+  h3 {
+    color: $aquamarineDark !important;
+    font-family: "Amiri", serif !important;
+    font-weight: 600 !important;
+    font-size: 25px !important;
+  }
+  .conofclassofsunday {
+    border: 1px solid red;
+    .imgConOfPrimary {
+      border: 1px solid red;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-height: 100%;
+      }
+    }
+    .ConOfPrimaryBox {
+      border: 1px solid $aquamarineDark;
+    }
+  }
+}

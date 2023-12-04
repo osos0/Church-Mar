@@ -11,6 +11,8 @@ import Manglia from "./pages/Manglia";
 import Holybible from "./pages/MangliaPages/Holybible";
 import KodasPage from "./pages/KodasPage";
 import MeetingPage from "./pages/MeetingPage";
+import SundaySchools from "./pages/SundaySchools/SundaySchools";
+import Eachclass from "./pages/SundaySchools/eachclass";
 
 function App() {
   return (
@@ -19,11 +21,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ourchurch" element={<Ourchurch />} />
         <Route path="/manglia" element={<Manglia />} />
         <Route path="/holybible" element={<Holybible />} />
         <Route path="/kodas" element={<KodasPage />} />
         <Route path="/meeting" element={<MeetingPage />} />
+        <Route path="/sundayschools" element={<SundaySchools />} />
+        <Route path="/sundayschools/:class" element={<Eachclass />} />
+        <Route path="/ourchurch" element={<Ourchurch />} />
       </Routes>
       <Footer />
     </>
