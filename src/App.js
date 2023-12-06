@@ -13,6 +13,8 @@ import KodasPage from "./pages/KodasPage";
 import MeetingPage from "./pages/MeetingPage";
 import SundaySchools from "./pages/SundaySchools/SundaySchools";
 import Eachclass from "./pages/SundaySchools/eachclass";
+import Kashafa from "./pages//kashafa/Kashafa";
+import Eachkashafa from "./pages/kashafa/eachkashafa";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/meeting" element={<MeetingPage />} />
         <Route path="/sundayschools" element={<SundaySchools />} />
         <Route path="/sundayschools/:class" element={<Eachclass />} />
+        <Route path="/kashafa" element={<Kashafa />} />
+        <Route path="/kashafa/:class" element={<Eachkashafa />} />
         <Route path="/ourchurch" element={<Ourchurch />} />
       </Routes>
       <Footer />

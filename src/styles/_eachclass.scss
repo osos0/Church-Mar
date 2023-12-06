@@ -7,22 +7,39 @@
     color: $aquamarineDark !important;
     font-family: "Amiri", serif !important;
     font-weight: 600 !important;
-    font-size: 25px !important;
+    font-size: 28px !important;
+  }
+  select {
+    width: 100%;
+    margin: 10px 0px;
   }
   .conofclassofsunday {
-    border: 1px solid red;
+    // border: 1px solid red;
     .imgConOfPrimary {
-      border: 1px solid red;
+      //   border: 1px solid red;
       height: 250px;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
         max-height: 100%;
+        filter: drop-shadow(5px 10px 8px rgba(0, 0, 0, 0.3));
       }
     }
+    .ConOfPrimaryBoxfirst {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0px;
+    }
     .ConOfPrimaryBox {
-      border: 1px solid $aquamarineDark;
+      border: 1px solid $aquamarine;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0px;
+      margin: 10px 0;
     }
   }
 }
